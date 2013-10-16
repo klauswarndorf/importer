@@ -1,0 +1,5 @@
+webdav.url=sgsdata.adtech.de/yoc/
+webdav.user=yoc
+webdav.pass=Ticani-X75
+
+hbase.table=statistics

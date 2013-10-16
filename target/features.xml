@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features>
+ <feature  name='camel-core'  version='2.11.0'   > 
+    <bundle>mvn:org.apache.camel/camel-core/2.11.0</bundle>
+ </feature>
+ <feature  name='camel-blueprint'  version='2.11.0'   > 
+    <feature version='2.11.0'>camel-core</feature>
+    <bundle>mvn:org.apache.camel/camel-blueprint/2.11.0</bundle>
+ </feature>
+ <feature  name='slf4j-api'  version='1.7.5'   > 
+    <bundle>mvn:org.slf4j/slf4j-api/1.7.5</bundle>
+ </feature>
+ <feature  name='slf4j-log4j12'  version='1.7.5'   > 
+    <feature version='1.7.5'>slf4j-api</feature>
+    <bundle>mvn:org.slf4j/slf4j-log4j12/1.7.5</bundle>
+ </feature>
+ <feature  name='jcl-over-slf4j'  version='1.7.5'   > 
+    <feature version='1.7.5'>slf4j-api</feature>
+    <bundle>mvn:org.slf4j/jcl-over-slf4j/1.7.5</bundle>
+ </feature>
+ <feature  name='log4j'  version='1.2.17'   > 
+    <bundle>mvn:log4j/log4j/1.2.17</bundle>
+ </feature>
+ <feature  name='camel-csv'  version='2.11.0'   > 
+    <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-csv/1.0-r706899_5</bundle>
+    <feature version='2.11.0'>camel-core</feature>
+    <bundle>mvn:org.apache.camel/camel-csv/2.11.0</bundle>
+ </feature>
+ <feature  name='camel-hbase'  version='2.11.0'   > 
+    <feature version='1.7.5'>slf4j-api</feature>
+    <feature version='2.11.0'>camel-core</feature>
+    <bundle>mvn:org.apache.camel/camel-hbase/2.11.0</bundle>
+ </feature>
+ <feature  name='hbase-client'  version='0.95.0'   > 
+    <bundle>mvn:org.apache.hbase/hbase-client/0.95.0</bundle>
+ </feature>
+</features>
